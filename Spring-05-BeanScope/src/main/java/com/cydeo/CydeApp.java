@@ -15,12 +15,12 @@ public class CydeApp {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
-        CommentService cs1 = context.getBean(CommentService.class);
-        CommentService cs2 = context.getBean(CommentService.class);
-
-        System.out.println(cs1);
-        System.out.println(cs2);
-
-        System.out.println(cs1==cs2);//Beam will only create one object
+//        CommentService cs1 = context.getBean(CommentService.class);
+//        CommentService cs2 = context.getBean(CommentService.class);
+//
+//        System.out.println(cs1);
+//        System.out.println(cs2);
+//
+//        System.out.println(cs1==cs2);//Beam will only create one object
     }
 }
