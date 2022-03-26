@@ -11,7 +11,7 @@ public class HomeController {
         return "home.html";//Return the HTML document name that contains the details we want the browser to display
     }
 
-    @RequestMapping("/welcome")
+    @RequestMapping("/welcome")// end point of URL
     public String home2 (){
         return "welcome.html";
     }
