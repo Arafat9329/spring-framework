@@ -13,8 +13,9 @@ import java.util.Random;
 @Controller
 public class MentorController {
 
-    @RequestMapping("/list")//URL end point
-    public String showTable(Model model){
+    @RequestMapping("/list")//URL end point http://localhost:8080/list
+    public String showTable(Model model) {
+
         List<Mentor> mentorsList = new ArrayList<>();
         mentorsList.add(new Mentor("Mike", "Smith", new Random().nextInt(100), Gender.Female));
         mentorsList.add(new Mentor("Tom", "Hanks", new Random().nextInt(100), Gender.Female));
@@ -23,6 +24,5 @@ public class MentorController {
         model.addAttribute("mentors", mentorsList);
 
         return "mentor/mentor-list";
-
     }
 }

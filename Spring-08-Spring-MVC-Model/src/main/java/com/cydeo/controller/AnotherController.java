@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class AnotherController {
 
-    @RequestMapping("/list")//URL end point
+    @RequestMapping("/list")//URL end point http://localhost:8080/another/list
     public String showTable(Model model) {
         List<Mentor> mentorsList = new ArrayList<>();
         mentorsList.add(new Mentor("Mike", "Smith", new Random().nextInt(100), Gender.Female));
