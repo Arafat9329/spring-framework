@@ -12,7 +12,6 @@ public class StudentController {
     @RequestMapping("/register")//http://localhost:8080/student/register
     public String register(Model model){
         model.addAttribute("students", DataGenerator.createdStudent());
-
         return "student/register";
     }
 
