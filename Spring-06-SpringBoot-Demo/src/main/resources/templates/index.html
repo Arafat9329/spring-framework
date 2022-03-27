@@ -8,7 +8,7 @@
 <!--    container for metadata(is not display )    -->
     <body>
 
-    <b> Welcome to Java developer course</b>
+        <b> Welcome to Java developer course</b>
 
         <h1 style="color: blue">Hello</h1>
         <h2 align="center" >Hello</h2>
@@ -46,6 +46,61 @@
             <td>120000</td>
 
         </table>
+
+        <label>UserName:</label>
+        <input type="text" name="username">
+
+        <br>
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <br>
+        <label>Enter your comments</label>
+        <textarea name="comments"></textarea>
+
+        <br>
+        <label>Please select your gender:</label>
+        <input type="radio" name="gender" value="male">Male <!-- we need value only for send it to API/DB -->
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+
+        <br>
+        <label>Please select your favourite recourse</label>
+        <input type="checkbox" name="course" value="spring">Spring
+        <input type="checkbox" name="course" value="DS">DS
+        <input type="checkbox" name="course" value="Java">Java
+
+        <br>
+        <label>Select your program</label>
+        <select>
+            <option value="us-sdet">US SDET</option>
+            <option value="eu-sdet">US SDET</option>
+            <option value="us-jd">US JD</option>
+            <option value="JD-AL">JD SDET</option>
+        </select>
+
+        <form action="#" method="get">
+
+            FirstName: <input type="text" name="first_name">
+
+            <br>
+            LastName:<input type="text" name="lastname">
+
+            <br>
+            <input type="button" value="submit">
+
+        </form>
+
+        <div style="background-color: aqua">
+
+            <h3>Java</h3>
+
+            <ul>
+                <li>SPRING</li>
+                <li>DATA STRUCTURE</li>
+            </ul>
+
+        </div>
 
     </body>
 
